@@ -15,7 +15,8 @@
   }
 
   .indent-guide {
-    color: @syntax-indent-guide-color;
+    // color: @syntax-indent-guide-color;
+    color: @blue;
   }
 
   .invisible-character {
@@ -30,13 +31,15 @@
 
     .line-number {
       &.cursor-line {
-        background-color: @syntax-gutter-background-color-selected;
-        color: @syntax-gutter-text-color-selected;
+        // background-color: @syntax-gutter-background-color-selected;
+        // color: @syntax-gutter-text-color-selected;
+        background-color: @blue;
+        color: white;
       }
 
       &.cursor-line-no-selection {
         // color: @syntax-gutter-text-color-selected;
-        color: @syntax-gutter-text-color-selected;
+        color: white;
       }
     }
   }
@@ -56,7 +59,7 @@
   }
 
   .selection .region {
-    background-color: @very-dark-gray;
+    background-color: @blue;
   }
 }
 
@@ -82,7 +85,7 @@
   }
 
   &.other.inherited-class {
-    color: @green;
+    color: @cyan;
   }
 }
 
