@@ -1,9 +1,9 @@
 @import "syntax-variables";
 
-.edetor-colors {
+.editor-colors {
   // background-color: @syntax-background-color;
   background-color: @zk-bg;
-  color: @syntax-text-color;
+  color: @zk-fg;
 }
 
 .editor {
@@ -11,7 +11,7 @@
   color: @zk-fg;
 
   .wrap-guide {
-    background-color: @syntax-wrap-guide-color;
+    background-color: lighten(@zk-bg, 25%);
   }
 
   .indent-guide {
@@ -24,21 +24,16 @@
   }
 
   .gutter {
-    // background-color: @syntax-gutter-background-color;
     background-color: @zk-bg;
-    // color: @syntax-gutter-text-color;
     color: @zk-fg;
 
     .line-number {
       &.cursor-line {
-        // background-color: @syntax-gutter-background-color-selected;
-        // color: @syntax-gutter-text-color-selected;
-        background-color: @blue;
+        background-color: darken(@zk-bg, 10%);
         color: white;
       }
 
       &.cursor-line-no-selection {
-        // color: @syntax-gutter-text-color-selected;
         color: white;
       }
     }
@@ -51,7 +46,8 @@
   }
 
   .invisible {
-    color: @syntax-text-color;
+    // color: @syntax-text-color;
+    color: @zk-fg;
   }
 
   .cursor {
@@ -59,7 +55,7 @@
   }
 
   .selection .region {
-    background-color: @blue;
+    background-color: darken(@zk-bg, 10%);
   }
 }
 
